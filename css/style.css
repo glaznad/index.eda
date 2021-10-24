@@ -9,6 +9,7 @@ body {
   margin: auto;
 }
 
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -41,12 +42,12 @@ body {
   cursor: pointer;
 }
 .auth {
-  margin-left: auto;  
+  margin-left: auto;
 }
 .login {
   display: block;
   padding: 16px 30px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border-radius: 50px;
   text-decoration: none;
   font-size: 14px;
@@ -58,7 +59,7 @@ body {
   margin-left: 30px;
   width: 49px;
   height: 49px;
-  background: #F66A15;
+  background: #f66a15;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -71,13 +72,14 @@ body {
   bottom: 0;
   display: block;
   padding: 5px;
-  background: #FFAF19;
+  background: #ffaf19;
   border-radius: 50%;
   font-size: 8px;
   line-height: 9px;
   color: #000000;
 }
 
+/* slider */
 .slide {
   position: relative;
   display: flex;
@@ -91,7 +93,7 @@ body {
   background-color: grey;
   color: #fff;
 }
-.slide-content{
+.slide-content {
   position: relative;
   max-width: 400px;
 }
@@ -110,7 +112,7 @@ body {
 }
 .button {
   display: inline-block;
-  padding: 12px 50px;;
+  padding: 12px 50px;
   border-radius: 25px;
   text-decoration: none;
   font-size: 16px;
@@ -118,13 +120,13 @@ body {
   line-height: 23px;
 }
 .button-primary {
-  background: #F47322;
+  background: #f47322;
   color: #fff;
   font-size: 14px;
 }
 .button-default {
   background-color: #fff;
-  color: #5F5F61;
+  color: #5f5f61;
 }
 .slide-summer {
   background-image: url('../img/summer.png');
@@ -138,17 +140,24 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
+
+/* promo */
 .promo {
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  margin: -20px;
 }
 .card {
-  flex: 1 1 570px;
-  margin-right: 54px;
+  flex: 50%;
+  margin: 20px;
   position: relative;
   padding: 32px;
   max-width: 570px;
@@ -158,9 +167,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.card:nth-child(even) {
-  margin-right: 0;
 }
 .card:before {
   z-index: -1;
@@ -173,14 +179,14 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 .card-text-light {
-  color:#fff;
+  color: #fff;
 }
 .card-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   object-fit: cover;
   z-index: -2;
 }
@@ -212,3 +218,235 @@ body {
   margin-bottom: 25px;
 }
 
+/* delivery-week*/
+.delivery-week {
+  padding: 50px 0 100px;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.delivery-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin: -15px;
+}
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  margin: 15px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+  color: #49494f;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 5px 10px;
+}
+.tag-health {
+  background-color: #d0fd89;
+}
+.tag-vegetable {
+  background-color: #aebc41;
+  color: #fff;
+}
+.tag-meat {
+  background-color: #b86b78;
+  color: #fff;
+}
+.tag-bird {
+  background-color: #d68334;
+  color: #fff;
+}
+.tag-fish {
+  background-color: #cd6255;
+  color: #fff;
+}
+.tag-baby {
+  background-color: #fffdbf;
+}
+.tag-parents {
+  background-color: #f6fdc8;
+}
+.tag-festive {
+  background-color: #fef7fe;
+}
+
+/* section-grey*/
+.section-grey {
+  background-color: #f6f6f6;
+}
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.tabs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 62px;
+  list-style-type: none;
+}
+.tabs-link {
+  margin-right: 58px;
+  color: #49494f;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+}
+.tabs-link.active {
+  color: #f37321;
+}
+.tabs-content {
+  display: flex;
+  justify-content: space-between;
+  margin: -18px;
+}
+.tabs-card {
+  flex: 25%;
+  margin: 18px;
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+.tabs-image {
+  max-width: 100%;
+}
+.tabs-card-content {
+  padding: 23px;
+}
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.tabs-descrioption {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabs-price {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #4b4b51;
+}
+.tabs-weight {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.button-outline {
+  cursor: pointer;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  color: #f37321;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+
+/* benefits*/
+.benefits {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.benefits-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: -18px;
+}
+.benefits-card {
+  flex: 25%;
+  margin: 18px;
+  padding: 30px 23px 25px;
+  max-width: 270px;
+  background-color: #fff;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.benefits-card-image {
+  display: block;
+  max-width: 60px;
+  margin: 0 auto 35px;
+}
+.benefits-card-title {
+  margin: 0 15px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.benefits-card-description {
+  margin: 0; 
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #49494f;
+}
+
+/* footer*/
+.footer {
+  padding: 40px 0;
+  background-color: #f6f6f6;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  margin-right: 50px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 23px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
